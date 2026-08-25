@@ -13,6 +13,14 @@ const faqs = [
     q: 'Bagaimana cara menghubungi support?',
     a: 'Klik tombol Bantuan di pojok kanan bawah aplikasi, atau kirim email ke support@contoh.com.',
   },
+  {
+    q: 'Berapa lama waktu yang dibutuhkan sampai hasil labnya keluar?',
+    a: 'Tergantung dari jenis pengujian yang kamu pilih ya. Biasanya estimasi hari kerjanya bakal langsung muncul pas kamu milih jenis layanan uji di sistem.',
+  },
+  {
+    q: 'Bagaimana cara ambil hasil atau sertifikat labnya?',
+    a: 'Kalau statusnya udah "Selesai", kamu gak perlu repot dateng ke lab. Tinggal klik tombol download di akun SIPUJA kamu, dan file sertifikat hasil ujinya langsung keunduh dalam bentuk PDF.',
+  },
 ]
 
 export const metadata = {
