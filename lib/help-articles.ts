@@ -26,6 +26,12 @@ export const helpCategories: HelpCategory[] = [
         description: 'Kenali tampilan utama dan lakukan pengaturan awal.',
         keywords: ['mulai', 'awal', 'setup', 'daftar'],
       },
+      {
+        slug: 'dashboard', // <--- PENAMBAHAN ARTIKEL DASHBOARD
+        title: 'Mengenal Tampilan Dashboard',
+        description: 'Panduan memahami statistik, menu navigasi, dan status permohonan.',
+        keywords: ['dashboard', 'tampilan', 'menu', 'permohonan', 'status'],
+      },
     ],
   },
   {
