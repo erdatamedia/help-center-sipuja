@@ -1,11 +1,10 @@
-import type { NextConfig } from "next";
-import createMDX from '@next/mdx';
+import createMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
-const nextConfig: NextConfig = {
+const nextConfig = {
     // Izinkan halaman .md / .mdx dikenali sebagai route App Router
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-};
+}
 
 const withMDX = createMDX({
     // Tambahkan remark/rehype plugin di sini kalau perlu (mis. remark-gfm untuk tabel)
@@ -15,4 +14,4 @@ const withMDX = createMDX({
     },
 })
 
-export default withMDX(nextConfig);
+export default withMDX(nextConfig)
