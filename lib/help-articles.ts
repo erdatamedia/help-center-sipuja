@@ -44,6 +44,24 @@ export const helpCategories: HelpCategory[] = [
         description: 'Cara mengubah nama, foto, dan kata sandi.',
         keywords: ['ganti password', 'ubah profil', 'email'],
       },
+      {
+        slug: 'panduan-fitur/permohonan', 
+        title: 'Cara Mengelola & Membuat Permohonan',
+        description: 'Panduan membuat pengajuan baru, mengecek detail, dan memahami status permohonan.',
+        keywords: ['permohonan', 'buat permohonan', 'sampel', 'tracking', 'status', 'verifikasi'],
+      },
+      {
+        slug: 'panduan-fitur/notifikasi', 
+        title: 'Melihat Pesan & Notifikasi System',
+        description: 'Cara melihat pemberitahuan status permohonan, e-billing, dan pesan dari petugas.',
+        keywords: ['notifikasi', 'pesan', 'pemberitahuan', 'update status', 'info'],
+      },
+      {
+        slug: 'panduan-fitur/profile', 
+        title: 'Mengelola Profil & Keamanan Akun',
+        description: 'Cara memperbarui data pemohon, kontak, dan mengubah kata sandi.',
+        keywords: ['profil', 'password', 'ganti password', 'alamat', 'telepon', 'biodata'],
+      },
     ],
   },
   {
