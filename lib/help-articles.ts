@@ -26,18 +26,18 @@ export const helpCategories: HelpCategory[] = [
         description: 'Kenali tampilan utama dan lakukan pengaturan awal.',
         keywords: ['mulai', 'awal', 'setup', 'daftar'],
       },
-      {
-        slug: 'dashboard', // <--- PENAMBAHAN ARTIKEL DASHBOARD
-        title: 'Mengenal Tampilan Dashboard',
-        description: 'Panduan memahami statistik, menu navigasi, dan status permohonan.',
-        keywords: ['dashboard', 'tampilan', 'menu', 'permohonan', 'status'],
-      },
     ],
   },
   {
     id: 'panduan-fitur',
     title: 'Panduan Fitur',
     articles: [
+      {
+        slug: 'panduan-fitur/dashboard',
+        title: 'Mengenal Tampilan Dashboard',
+        description: 'Penjelasan menu, statistik permohonan, dan status di dashboard.',
+        keywords: ['dashboard', 'menu', 'statistik', 'status', 'tampilan'],
+      },
       {
         slug: 'panduan-fitur/mengelola-akun',
         title: 'Mengelola Akun & Profil',
@@ -55,12 +55,6 @@ export const helpCategories: HelpCategory[] = [
         title: 'Melihat Pesan & Notifikasi System',
         description: 'Cara melihat pemberitahuan status permohonan, e-billing, dan pesan dari petugas.',
         keywords: ['notifikasi', 'pesan', 'pemberitahuan', 'update status', 'info'],
-      },
-      {
-        slug: 'panduan-fitur/profile', 
-        title: 'Mengelola Profil & Keamanan Akun',
-        description: 'Cara memperbarui data pemohon, kontak, dan mengubah kata sandi.',
-        keywords: ['profil', 'password', 'ganti password', 'alamat', 'telepon', 'biodata'],
       },
     ],
   },
