@@ -2,24 +2,28 @@ import { ArticleLayout } from '@/components/ArticleLayout'
 
 const faqs = [
   {
-    q: 'Bagaimana cara mengubah kata sandi?',
-    a: 'Buka Pengaturan Akun > Keamanan > Ubah Kata Sandi.',
+    q: 'Bagaimana jika saya belum mempunyai akun?',
+    a: 'Jika anda belum mempunyai sebuah akun. anda dapat membuat akun pada halaman registrasi ketika anda pertama kali mengakses dashboard ini.',
   },
   {
-    q: 'Apakah data saya aman?',
-    a: 'Ya, semua data disimpan terenkripsi dan hanya bisa diakses oleh Anda.',
+    q: 'Bagaimana jika saya lupa password ketika ingin login ke dashboard?',
+    a: 'Jika anda lupa dengan password anda ketika login ke dashboard maka anda dapat menuju ke halaman Lupa Password pada halaman login dashboard.',
   },
   {
-    q: 'Bagaimana cara menghubungi support?',
-    a: 'Klik tombol Bantuan di pojok kanan bawah aplikasi, atau kirim email ke support@contoh.com.',
+    q: 'Apakah data saya aman saat disimpan pada website dashboard ini?',
+    a: 'Ya, semua data yang anda simpan pada website ini disimpan terenkripsi dan hanya bisa diakses oleh Anda. Orang lain dan admin tidak dapat membaca data tersebut',
+  },
+  {
+    q: 'Bagaimana caranya untuk menghubungi support center pada website dashboard ini?',
+    a: 'agar anda dapat menghubungi support center cukup dengan klik tombol Bantuan di pojok kanan bawah aplikasi, atau kirim email ke support@contoh.com.',
   },
   {
     q: 'Berapa lama waktu yang dibutuhkan sampai hasil labnya keluar?',
-    a: 'Tergantung dari jenis pengujian yang kamu pilih ya. Biasanya estimasi hari kerjanya bakal langsung muncul pas kamu milih jenis layanan uji di sistem.',
+    a: 'Tergantung dari jenis pengujian yang anda pilih. Estimasi hari kerjanya akan langsung muncul ketika anda memilih jenis layanan uji pada sistem.',
   },
   {
-    q: 'Bagaimana cara ambil hasil atau sertifikat labnya?',
-    a: 'Kalau statusnya udah "Selesai", kamu gak perlu repot dateng ke lab. Tinggal klik tombol download di akun SIPUJA kamu, dan file sertifikat hasil ujinya langsung keunduh dalam bentuk PDF.',
+    q: 'Bagaimana caranya untuk mengambil hasil atau sertifikat labnya?',
+    a: 'Jika statusnya sudah menunjukkan status "Selesai", anda tidak perlu repot datang ke lab. Anda cukup klik tombol download pada akun SIPUJA anda, dan file sertifikat hasil ujinya langsung terunduh dalam bentuk file PDF.',
   },
 ]
 
@@ -30,7 +34,7 @@ export const metadata = {
 export default function FaqPage() {
   return (
     <ArticleLayout slug="faq">
-      <h1>Pertanyaan yang Sering Diajukan</h1>
+      <h1 className={"mb-4 text-[#70726D]"}>Pertanyaan yang Sering Diajukan</h1>
       <div className="space-y-6">
         {faqs.map((item) => (
           <div key={item.q}>
