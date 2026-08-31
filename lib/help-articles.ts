@@ -41,6 +41,12 @@ export const helpCategories: HelpCategory[] = [
     title: 'Panduan Fitur',
     articles: [
       {
+        slug: 'panduan-fitur/dashboard',
+        title: 'Panduan Navigasi & Ringkasan Dashboard',
+        description: 'Penjelasan menu, statistik permohonan, dan status di dashboard.',
+        keywords: ['dashboard', 'menu', 'statistik', 'status', 'tampilan'],
+      },
+      {
         slug: 'panduan-fitur/mengelola-akun',
         title: 'Mengelola Akun & Profil',
         description: 'Cara mengubah nama, foto, dan kata sandi.',
