@@ -21,11 +21,19 @@ export const helpCategories: HelpCategory[] = [
     title: 'Mulai di Sini',
     articles: [
       {
-        slug: 'getting-started',
+        slug: 'getting-started/langkah-pertama', // <--- PENAMBAHAN ARTIKEL LANGKAH PERTAMA
         title: 'Langkah Pertama Menggunakan Aplikasi',
         description: 'Kenali tampilan utama dan lakukan pengaturan awal.',
         keywords: ['mulai', 'awal', 'setup', 'daftar'],
       },
+      
+      {
+        slug: 'getting-started/dashboard', // <--- PENAMBAHAN ARTIKEL DASHBOARD
+        title: 'Mengenal Tampilan Dashboard',
+        description: 'Panduan memahami statistik, menu navigasi, dan status permohonan.',
+        keywords: ['dashboard', 'tampilan', 'menu', 'permohonan', 'status'],
+      },
+
     ],
   },
   {
