@@ -8,24 +8,27 @@ export const metadata = {
 
 # Cara Mengelola & Membuat Permohonan
 
-Menu **Permohonan** memungkinkan Anda untuk melihat seluruh riwayat pengajuan layanan, membuat permohonan baru, dan memantau perkembangan proses verifikasi secara rinci.
+Menu **Permohonan** memungkinkan Anda untuk melihat seluruh riwayat pengajuan layanan, membuat permohonan baru, dan memantau perkembangan proses pengujian secara rinci.
 
 ![Permohonan](/images/permohonan.png)
 
 ---
 
-## 1. Membuat Permohonan Baru
+## 1. Langkah Membuat Permohonan Baru
 
-Untuk mengajukan permohonan atau pengujian sampel baru:
+Untuk mengajukan permohonan pengujian laboratorium baru:
 
-1. Buka menu **Permohonan** pada sidebar sebelah kiri (atau klik tombol **+ Buat Permohonan** di Dashboard).
-2. Klik tombol biru **+ Buat Permohonan** yang terletak di sudut kanan atas.
-3. **Isi Formulir Pengajuan:**
-   * Masukkan nama/jenis permohonan.
-   * Isi rincian data sampel (jumlah, deskripsi, atau kriteria).
-4. **Unggah Berkas Pendukung:** Lampirkan dokumen yang dipersyaratkan (format PDF/JPG). Klik **Kirim Permohonan**.
+1. Buka menu **Permohonan** pada sidebar sebelah kiri, lalu klik tombol biru **+ Buat Permohonan** di sudut kanan atas.
+2. **Cek Data Pemohon:** Pastikan data diri Anda (Tanggal Permohonan, Nama Lengkap, Alamat, No. HP, dan Email) sudah sesuai.
+3. **Mengisi Data Sampel:**
+   * **Kelola Sampel:** Klik tombol **+ Tambah Sampel** jika ingin menguji lebih dari satu sampel dalam satu pengajuan (maksimal **5 sampel**).
+   * **Pilih Kategori Sampel:** Pilih salah satu kategori sampel yang sesuai (*Hijauan, Bahan Pakan, Pakan, Pakan Asal Hewan, Feses, Semen, Darah, Jaringan Hewan,* atau *Lain-Lain*).
+   * **Pilih Parameter Uji:** Centang satu atau beberapa jenis pengujian yang dibutuhkan beserta tarifnya (contoh: *Kadar Air, Protein Kasar, Uji RBT, Isolasi DNA,* dll.).
+4. **Unggah Surat Pengantar (Opsional):** Lampirkan dokumen Surat Pengantar Uji dalam format **PDF** (ukuran maksimum **5MB**).
+5. **Opsi Pengiriman Dokumen LHP:** Centang kotak *"Saya ingin menerima dokumen fisik LHP (dikirim via pos/kurir)"* jika memerlukan cetakan fisik Laporan Hasil Pengujian.
+6. Klik **Kirim Permohonan** untuk memproses pengajuan (atau klik **Batal** untuk membatalkan).
 
-**Catatan:** Pastikan seluruh data yang dimasukkan sudah benar sebelum menekan tombol kirim.
+**Catatan:** Pastikan seluruh rincian sampel dan parameter uji yang dipilih sudah benar sebelum menekan tombol kirim.
 
 ![Buat Permohonan](/images/buat-permohonan.png)
 
@@ -33,13 +36,16 @@ Untuk mengajukan permohonan atau pengujian sampel baru:
 
 ## 2. Memahami Status Permohonan
 
-Setiap permohonan yang Anda buat memiliki indikator status untuk menunjukkan sejauh mana prosesnya berjalan:
+Setiap permohonan yang Anda buat memiliki indikator status untuk menunjukkan sejauh mana alur pengujian berjalan:
 
-* **Draft:** Permohonan baru dibuat dan belum dikirimkan ke sistem.
-* **Verifikasi:** Permohonan sedang diperiksa oleh tim administrasi untuk pengecekan kelengkapan berkas/sampel.
-* **Sedang Proses:** Berkas/sampel telah disetujui dan saat ini dalam tahap pengujian atau pengerjaan.
-* **Selesai:** Seluruh proses pengujian/layanan telah rampung dan hasil/dokumen akhir sudah dapat diunduh.
-* **Ditolak / Perlu Revisi:** Berkas belum lengkap atau terdapat ketidaksesuaian. Anda perlu memperbaruinya sesuai catatan dari petugas.
+* **Menunggu Sampel:** Permohonan telah dibuat dan sistem menunggu sampel fisik dikirimkan ke laboratorium.
+* **Sampel Diterima:** Fisik sampel telah diterima oleh petugas laboratorium.
+* **Verifikasi:** Pengecekan kelengkapan dokumen dan kelaikan sampel oleh tim verifikator.
+* **Menunggu Penerbitan E-Billing:** Berkas disetujui dan sistem sedang menyiapkan dokumen rincian biaya.
+* **Menunggu Pembayaran:** Tagihan e-billing telah terbit dan siap dibayar oleh pemohon.
+* **Lunas:** Bukti pembayaran telah diverifikasi dan dinyatakan sah.
+* **On Progress:** Proses analisa dan pengujian sampel sedang berjalan di laboratorium.
+* **Selesai:** Pengujian rampung dan dokumen Laporan Hasil Pengujian (LHP) siap diunduh.
 
 ---
 
@@ -50,10 +56,10 @@ Saat Anda mengklik salah satu kode permohonan (contoh: `SIPUJA-2608-003`), Anda 
 ![Detail Permohonan](/images/permohonan-detail.png)
 
 ### 1. Tab Detail
-Berisi ringkasan data utama permohonan yang telah Anda ajukan, seperti nama pemohon, jenis layanan, tanggal pengajuan, serta informasi rinci mengenai sampel/berkas.
+Berisi ringkasan data utama permohonan yang telah Anda ajukan, seperti nama pemohon, jenis layanan, tanggal pengajuan, serta rincian parameter uji yang dipilih.
 
 ### 2. Tab Pengiriman & Verifikasi
-Menampilkan status kelayakan berkas dan sampel yang Anda kirimkan. Di tab ini Anda bisa melihat apakah sampel sudah diterima oleh petugas dan apakah hasil verifikasi awal menyatakan berkas lengkap atau memerlukan revisi.
+Menampilkan status kelayakan berkas dan sampel yang Anda kirimkan. Di tab ini Anda bisa melihat apakah sampel sudah diterima oleh petugas serta status pengiriman dokumen fisik LHP.
 
 ### 3. Tab Pembayaran
 Tempat untuk mengelola proses pembayaran layanan:
