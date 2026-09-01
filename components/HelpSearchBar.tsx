@@ -28,7 +28,7 @@ export function HelpSearchBar() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Cari bantuan, mis. 'ganti password'..."
-        className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 text-black"
         aria-label="Cari artikel bantuan"
       />
       {results.length > 0 && (

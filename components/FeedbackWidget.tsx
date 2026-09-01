@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+//import {sendGAEvent} from "@next/third-parties/google";
 
 // Widget "Apakah ini membantu?" di akhir tiap artikel. Ganti fungsi
 // handleFeedback dengan pemanggilan API Nest.js Anda, mis.
@@ -14,6 +15,12 @@ export function FeedbackWidget({ articleSlug }: { articleSlug: string }) {
     //   method: 'POST',
     //   body: JSON.stringify({ helpful: value === 'yes' }),
     // })
+    if (typeof window !== 'undefined' && typeof (window).gtag === 'function') {
+      (window).gtag('event', 'doc_feedback', {
+        page_path: articleSlug,
+        value: value
+      })
+    }
   }
 
   return (

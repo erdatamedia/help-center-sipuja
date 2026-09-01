@@ -1,61 +1,52 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
 
 export const metadata = {
-title: 'Mengenal Tampilan Dashboard Portal SIPUJA',
+  title: 'Mengenal Tampilan Dashboard',
 }
 
-<ArticleLayout slug="dashboard">
+<ArticleLayout slug="panduan-fitur/dashboard">
 
-# Mengenal Tampilan Dashboard Portal SIPUJA
+# Panduan Navigasi & Ringkasan Dashboard
 
-Halaman Dashboard merupakan halaman utama yang muncul setelah Anda masuk ke Portal SIPUJA. Melalui halaman ini, Anda dapat melihat ringkasan pengajuan, memantau status permohonan, dan membuat permohonan baru.
+Halaman **Dashboard** merupakan pusat kendali utama saat Anda pertama kali masuk ke Portal SIPUJA. Halaman ini dirancang untuk memberikan ringkasan informasi permohonan Anda secara cepat dan efisien.
 
-![Tampilan Dashboard SIPUJA](/images/dashboard.png)
-
----
-
-## 1. Ringkasan Pengajuan
-
-Pada bagian atas dashboard terdapat tiga kartu yang menampilkan ringkasan status permohonan Anda:
-
-* **Total Permohonan:** Menampilkan jumlah seluruh permohonan yang telah Anda buat melalui Portal SIPUJA.
-* **Sedang Proses:** Menampilkan jumlah permohonan yang masih dalam tahap pemeriksaan, verifikasi, atau proses oleh petugas.
-* **Selesai:** Menampilkan jumlah permohonan yang sudah selesai diproses.
+![Tampilan Dashboard SIPUJA](/images/dashboard-overview.png)
 
 ---
 
-## 2. Tombol "Buat Permohonan"
+## 1. Kartu Ringkasan & Statistik
 
-Di bagian kanan atas terdapat tombol **+ Buat Permohonan**.
+Di bagian atas dashboard, terdapat kartu indikator angka yang menampilkan ringkasan status permohonan Anda secara *real-time*:
 
-Klik tombol ini jika Anda ingin membuat pengajuan layanan atau mengirimkan sampel baru melalui Portal SIPUJA.
+* **Total Permohonan:** Menampilkan jumlah keseluruhan pengajuan uji yang pernah Anda buat di portal.
+* **Sedang Diproses:** Menunjukkan jumlah permohonan yang saat ini aktif berjalan (dalam tahap verifikasi, pembayaran, maupun pengujian di laboratorium).
+* **Selesai:** Menampilkan jumlah pengajuan yang telah rampung dan Laporan Hasil Pengujian (LHP)-nya sudah diterbitkan.
+
+---
+
+## 2. Tombol Aksi Cepat
+
+Untuk mempermudah navigasi pengajuan layanan:
+
+* **+ Buat Permohonan:** Tombol pintasan utama yang terletak di area atas dashboard untuk langsung mengarahkan Anda ke formulir pengajuan sampel baru tanpa harus membuka menu samping.
 
 ---
 
 ## 3. Daftar Permohonan Terbaru
 
-Bagian **Permohonan Terbaru** menampilkan beberapa permohonan yang baru saja Anda buat.
+Pada bagian bawah dashboard, terdapat tabel **Permohonan Terbaru** yang menampilkan daftar pengajuan terakhir Anda:
 
-Informasi yang ditampilkan meliputi:
-
-* **Kode Permohonan:** Nomor khusus yang digunakan sebagai identitas permohonan, misalnya `SIPUJA-2608-003`. Kode ini dapat digunakan saat Anda ingin menanyakan atau melakukan konsultasi terkait permohonan.
-* **Tanggal:** Berisi tanggal berapa anda membuat permohonan.
-* **Detail Sampel:** Menampilkan informasi singkat mengenai jumlah sampel yang diajukan.
-* **Status:** Menunjukkan tahapan permohonan saat ini, misalnya **Verifikasi**.
-* **Lihat Semua:** Klik tautan ini untuk melihat seluruh daftar dan riwayat permohonan Anda.
+* **Kode & Tanggal Permohonan:** Menampilkan identitas unik pengajuan (contoh: `SIPUJA-2608-003`) beserta tanggal pembuatannya.
+* **Status Terkini:** Label warna yang menunjukkan tahapan proses permohonan secara langsung.
+* **Aksi (Detail):** Klik pada baris permohonan untuk langsung berpindah ke halaman detail 5 tab guna memantau progres, melakukan pembayaran, atau mengunduh dokumen LHP.
 
 ---
 
-## 4. Menu Navigasi Samping
+## 4. Navigasi Sidebar & Fitur Tambahan
 
-Menu di sebelah kiri atau **sidebar** digunakan untuk berpindah ke halaman lain di Portal SIPUJA.
+Menu navigasi sebelah kiri (sidebar) selalu tersedia untuk membantu Anda berpindah halaman dengan cepat:
 
-1. **Dashboard:** Menampilkan ringkasan informasi dan status permohonan.
-2. **Permohonan:** Menampilkan seluruh permohonan beserta detail dokumen dan perkembangannya.
-3. **Notifikasi:** Menampilkan pesan atau informasi terbaru dari petugas terkait permohonan Anda.
-4. **Profil:** Digunakan untuk melihat dan mengubah data diri, informasi kontak, atau kata sandi akun.
-5. **Logout:** Digunakan untuk keluar dari akun setelah selesai menggunakan Portal SIPUJA.
-
-Dengan memahami bagian-bagian dashboard ini, Anda dapat lebih mudah melihat perkembangan permohonan dan menggunakan fitur yang tersedia di Portal SIPUJA.
+* **Menu Utama:** Akses cepat ke halaman *Dashboard*, *Permohonan*, *Notifikasi*, dan *Profil*.
+* **Mode Malam & Logout:** Ikon di pojok kiri bawah untuk mengubah tema tampilan (terang/gelap) serta tombol keluar dari sistem secara aman.
 
 </ArticleLayout>

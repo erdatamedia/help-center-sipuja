@@ -42,7 +42,7 @@ export const helpCategories: HelpCategory[] = [
     articles: [
       {
         slug: 'panduan-fitur/dashboard',
-        title: 'Mengenal Tampilan Dashboard',
+        title: 'Panduan Navigasi & Ringkasan Dashboard',
         description: 'Penjelasan menu, statistik permohonan, dan status di dashboard.',
         keywords: ['dashboard', 'menu', 'statistik', 'status', 'tampilan'],
       },
