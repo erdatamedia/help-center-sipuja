@@ -25,3 +25,29 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Override paksa seluruh teks di dalam konten MDX saat mode gelap */
+.dark .prose,
+.dark .prose-sm {
+  color: #f1f5f9 !important; /* Warna teks utama (slate-100) */
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose strong,
+.dark .prose b {
+  color: #ffffff !important; /* Warna judul dan teks tebal putih terang */
+}
+
+.dark .prose p,
+.dark .prose li,
+.dark .prose span {
+  color: #e2e8f0 !important; /* Warna paragraf & list putih cerah (slate-200) */
+}
+
+.dark .prose code {
+  color: #38bdf8 !important; /* Warna teks inline code */
+  background-color: #1e293b !important;
+}
