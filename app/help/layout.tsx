@@ -5,10 +5,9 @@ import Image from 'next/image'
 
 export default function HelpLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-white text-slate-900 transition-colors duration-200 dark:bg-slate-900 dark:text-slate-100">
+    <div className="min-h-screen">
       <header className="border-b border-gray-200 bg-white transition-colors duration-200 dark:border-slate-800 dark:bg-slate-900">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:gap-6 md:px-8">
-          {/* Logo & judul */}
           <div className="flex shrink-0 items-center gap-2.5">
             <Image
               src="/svg/logo.svg"
@@ -20,13 +19,12 @@ export default function HelpLayout({ children }: { children: React.ReactNode }) 
               <span className="block text-base font-bold leading-none text-slate-900 dark:text-white">
                 SIPUJA
               </span>
-              <span className="hidden text-xs text-slate-400 dark:text-slate-400 sm:block">
+              <span className="hidden text-xs text-slate-400 sm:block">
                 Sistem Pengujian Hasil Lab
               </span>
             </div>
           </div>
 
-          {/* Search bar */}
           <div className="flex flex-1 justify-center">
             <div className="w-full max-w-2xl">
               <HelpSearchBar />
