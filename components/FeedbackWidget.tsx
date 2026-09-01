@@ -18,7 +18,7 @@ export function FeedbackWidget({ articleSlug }: { articleSlug: string }) {
     if (typeof window !== 'undefined' && typeof (window).gtag === 'function') {
       (window).gtag('event', 'doc_feedback', {
         page_path: articleSlug,
-        value: value
+        did_it_helping: value
       })
     }
   }
