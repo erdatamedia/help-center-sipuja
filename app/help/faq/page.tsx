@@ -27,14 +27,10 @@ const faqs = [
   },
 ]
 
-export const metadata = {
-  title: 'Pertanyaan yang Sering Diajukan',
-}
-
 export default function FaqPage() {
   return (
     <ArticleLayout slug="faq">
-      <h1 className={"mb-4 text-[#70726D]"}>Pertanyaan yang Sering Diajukan</h1>
+      <h1 className={"mb-4 text-black"}>Pertanyaan yang Sering Diajukan</h1>
       <div className="space-y-6">
         {faqs.map((item) => (
           <div key={item.q}>
