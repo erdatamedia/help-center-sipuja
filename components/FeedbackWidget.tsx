@@ -27,22 +27,22 @@ export function FeedbackWidget({ articleSlug }: { articleSlug: string }) {
     <div className="mt-10 border-t border-gray-200 pt-6">
       {answered === null ? (
         <div className="flex items-center gap-3">
-          <p className="text-sm text-gray-600">Apakah artikel ini membantu?</p>
+          <p className="text-sm dark:text-white text-gray-600">Apakah artikel ini membantu?</p>
           <button
             onClick={() => handleFeedback('yes')}
-            className="rounded-md border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50"
+            className="rounded-md border border-gray-300 px-3 py-1.5 text-sm dark:hover:bg-gray-700 hover:bg-gray-50"
           >
             👍 Ya
           </button>
           <button
             onClick={() => handleFeedback('no')}
-            className="rounded-md border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50"
+            className="rounded-md border border-gray-300 px-3 py-1.5 text-sm dark:hover:bg-gray-700 hover:bg-gray-50"
           >
             👎 Tidak
           </button>
         </div>
       ) : (
-        <p className="text-sm text-gray-500">
+        <p className="text-sm dark:text-white text-gray-500">
           {answered === 'yes'
             ? 'Terima kasih atas masukannya! 🙌'
             : 'Terima kasih. Coba lihat halaman Troubleshooting atau hubungi support kami.'}
