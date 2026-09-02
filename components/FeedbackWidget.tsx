@@ -17,8 +17,8 @@ export function FeedbackWidget({ articleSlug }: { articleSlug: string }) {
     // })
     if (typeof window !== 'undefined' && typeof (window).gtag === 'function') {
       (window).gtag('event', 'doc_feedback', {
-        page_path: articleSlug,
-        did_it_helping: value
+        doc_slug: articleSlug,
+        is_helpful: value
       })
     }
   }
