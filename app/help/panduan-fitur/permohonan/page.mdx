@@ -34,26 +34,23 @@ Untuk mengajukan permohonan pengujian laboratorium baru:
 
 ---
 
-## 2. Memahami Status Permohonan
+## 2. Memahami Alur Status Permohonan
 
-Setiap permohonan yang Anda buat memiliki indikator status untuk menunjukkan sejauh mana alur pengujian berjalan:
+Setiap permohonan yang Anda buat memiliki indikator status yang diperbarui secara berurutan:
 
 * **Menunggu Sampel:** Permohonan telah dibuat dan sistem menunggu sampel fisik dikirimkan ke laboratorium.
-* **Sampel Diterima:** Fisik sampel telah diterima oleh petugas laboratorium.
-* **Verifikasi:** Pengecekan kelengkapan dokumen dan kelaikan sampel oleh tim verifikator.
-* **Menunggu Penerbitan E-Billing:** Berkas disetujui dan sistem sedang menyiapkan dokumen rincian biaya.
-* **Menunggu Pembayaran:** Tagihan e-billing telah terbit dan siap dibayar oleh pemohon.
-* **Lunas:** Bukti pembayaran telah diverifikasi dan dinyatakan sah.
-* **On Progress:** Proses analisa dan pengujian sampel sedang berjalan di laboratorium.
-* **Selesai:** Pengujian rampung dan dokumen Laporan Hasil Pengujian (LHP) siap diunduh.
+* **Sampel Diterima / Verifikasi:** Fisik sampel telah diterima dan diperiksa kelaikannya oleh tim verifikator.
+* **Menunggu Pembayaran:** File *e-billing* PNBP telah diterbitkan oleh admin. Pemohon dapat mengunduh *e-billing* dan wajib mengunggah bukti bayar.
+* **Menunggu Verifikasi Pembayaran:** Bukti bayar telah diunggah dan sedang dalam proses konfirmasi oleh admin laboratorium.
+* **Lunas:** Pembayaran telah diverifikasi sah oleh admin. Sampel siap/sedang diproses di laboratorium.
+* **On Progress (Pengujian):** Analisa laboratorium sedang berjalan.
+* **Selesai:** Pengujian rampung, dokumen LHP terbit, dan siap diunduh oleh pemohon.
 
 ---
 
 ## 3. Memahami Halaman Detail Permohonan
 
-Saat Anda mengklik salah satu kode permohonan (contoh: `SIPUJA-2608-003`), Anda akan diarahkan ke halaman detail yang memiliki 5 tab utama:
-
-![Detail Permohonan](/images/permohonan-detail.png)
+Saat Anda mengklik salah satu kode permohonan (contoh: `SIPUJA-2609-002`), Anda akan diarahkan ke halaman detail yang memiliki 5 tab utama:
 
 ### 1. Tab Detail
 Berisi ringkasan data utama permohonan yang telah Anda ajukan, seperti nama pemohon, jenis layanan, tanggal pengajuan, serta rincian parameter uji yang dipilih.
@@ -62,14 +59,33 @@ Berisi ringkasan data utama permohonan yang telah Anda ajukan, seperti nama pemo
 Menampilkan status kelayakan berkas dan sampel yang Anda kirimkan. Di tab ini Anda bisa melihat apakah sampel sudah diterima oleh petugas serta status pengiriman dokumen fisik LHP.
 
 ### 3. Tab Pembayaran
-Tempat untuk mengelola proses pembayaran layanan:
-* Status Penerbitan: Menampilkan informasi *e-billing* dari admin.
-* Unggah Bukti Bayar: Tempat mengunggah resi/bukti transfer pembayaran setelah *e-billing* diterbitkan.
+Tempat mengelola proses pembayaran layanan PNBP melalui 3 tahapan visual:
+
+1. **Mengunggah Bukti Bayar:**
+   Saat status *Menunggu Pembayaran*, klik tombol **Lihat E-Billing** atau **Unduh E-Billing** untuk melihat tagihan. Setelah transaksi dilakukan, klik tombol biru **Upload Bukti Bayar** untuk melampirkan resi pembayaran.
+   
+   ![Upload Bukti Bayar](/images/bukti-pembayaran.jpeg)
+
+2. **Menunggu Verifikasi Admin:**
+   Setelah bukti pembayaran berhasil diunggah, status akan berubah menjadi **Menunggu Verifikasi Pembayaran**. Pada tahap ini, petugas admin akan mengonfirmasi kesesuaian dana yang masuk ke rekening.
+   
+   ![Menunggu Verifikasi Pembayaran](/images/verifikasi-pembayaran.png)
+
+3. **Status Lunas:**
+   Jika bukti transfer telah diverifikasi dan dikonfirmasi valid, status pada tab Pembayaran akan berganti menjadi **Lunas** (berlatar hijau) dan sampel Anda otomatis masuk ke antrean analisa laboratorium.
+   
+   ![Status Lunas](/images/pembayaran-lunas.png)
 
 ### 4. Tab Analisa & LHP
-Menampilkan progres pengerjaan pengujian sampel di laboratorium hingga penerbitan Laporan Hasil Pengujian (LHP) yang nantinya dapat Anda unduh setelah seluruh proses selesai.
+Menampilkan progres analisis laboratorium dan penerbitan dokumen Laporan Hasil Pengujian (LHP):
+
+![Analisa dan LHP](/images/analisa-Lhp.jpeg)
+
+* **Status Analisa & LHP Terbit:** Menampilkan indikator **Selesai Pengujian** dan **LHP Terbit**.
+* **Mengunduh LHP:** Klik tombol biru **Download LHP**. *Catatan:* Untuk dapat mengunduh file LHP, Anda wajib melakukan pengisian **Survei Kepuasan Masyarakat (SKM)** terlebih dahulu pada sistem yang disediakan.
+* **Pengiriman LHP Fisik (Jika Memilih Dikirim):** Jika di awal Anda memilih opsi penerimaan dokumen fisik, status pengiriman beserta **Nomor Resi** kurir/pos akan ditampilkan di bagian bawah tab ini untuk Anda lacak (sistem biaya pengiriman menggunakan metode COD).
 
 ### 5. Tab Riwayat
-Menampilkan catatan kronologis (*timeline*) perjalanan permohonan Anda dari awal dibuat, diverifikasi, dibayar, hingga selesai diproses.
+Menampilkan catatan kronologis (*timeline*) seluruh aktivitas perjalanan permohonan Anda dari awal dibuat, diverifikasi, dibayar, hingga selesai diproses.
 
 </ArticleLayout>
